@@ -1,22 +1,19 @@
-package com.example.myapplication;
+package com.example.myapplication
 
-public class Employee {
-    String name;
-    int age;
-    Employee(String name, int age){
-        this.name = name;
-        this.age = age;
+class Employee internal constructor(var name: String, var age: Int) {
+    fun getname(): String {
+        return this.name
     }
-    public String getname() {
-        return this.name;
+
+    fun putname(name: String) {
+        this.name = name
     }
-    public void putname(String name){
-        this.name = name;
+
+    fun getage(): Int {
+        return this.age
     }
-    public int getage() {
-        return this.age;
-    }
-    public void putage(int age){
-        this.age = age;
+
+    fun putage(age: Int) {
+        this.age = age
     }
 }
