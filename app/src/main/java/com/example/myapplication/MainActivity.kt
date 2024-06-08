@@ -1,6 +1,10 @@
 package com.example.myapplication
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +20,11 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+    fun clickHandler(view: View) {
+        Log.i("MainActivity-clickHandler", "button clicked")
+        val dialIntent: Intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:12345678"))
+        val webIntent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.yahoo.com"))
+        startActivity(webIntent)
     }
 }
