@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="83dp"
         android:layout_marginTop="157dp"
+        android:autofillHints="Enter Name"
         android:ems="10"
-        android:hint="@string/hint_name"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,8 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
+        android:autofillHints="Enter password"
         android:ems="10"
-        android:hint="@string/hint_password"
         android:inputType="numberPassword"
         app:layout_constraintStart_toStartOf="@+id/editTextText2"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
