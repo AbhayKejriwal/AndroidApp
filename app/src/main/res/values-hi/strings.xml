@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">मेरा आवेदन</string>
+    <string name="hint_name">नाम दर्ज करें</string>
+    <string name="hint_password">पास वर्ड दर्ज करें</string>
+    <string name="login">लॉग इन करें</string>
+</resources>
