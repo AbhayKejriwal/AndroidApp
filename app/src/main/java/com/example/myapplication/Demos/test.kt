@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.Demos
 
 fun main() {
     var myStudent: Student = Student("Abhay",25, "Assam")
