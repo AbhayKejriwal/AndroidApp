@@ -1,6 +1,7 @@
-package com.example.myapplication.Demos;
+package com.example.myapplication;
 
 public class Calculator {
+
     public int add(int a, int b){
         return a+b;
     }
@@ -9,4 +10,3 @@ public class Calculator {
         return  a*b;
     }
 }
-
