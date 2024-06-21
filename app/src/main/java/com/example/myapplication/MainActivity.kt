@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        var name:String =  "abdul"
         Log.i(TAG,"activity is getting created")
     }
 
@@ -27,7 +28,6 @@ class MainActivity : AppCompatActivity() {
 //        }
         var hIntent:Intent = Intent(this,HomeActivity::class.java)
         hIntent.putExtra("mykey","android-vit-abdul")
-        throw NullPointerException("demo vit exception")
         startActivity(hIntent)
     }
 
