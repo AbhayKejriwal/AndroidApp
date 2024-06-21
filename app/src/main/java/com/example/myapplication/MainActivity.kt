@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 //        }
         var hIntent:Intent = Intent(this,HomeActivity::class.java)
         hIntent.putExtra("mykey","android-vit-abdul")
+        throw NullPointerException("demo vit exception")
         startActivity(hIntent)
     }
 
