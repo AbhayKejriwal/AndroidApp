@@ -41,6 +41,7 @@ dependencies {
 //    implementation(libs.androidx.activity:activity:1.9.0)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.retrofit)
+    implementation(libs.converter.scalars)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

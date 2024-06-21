@@ -19,13 +19,6 @@ class MainActivity : AppCompatActivity() {
 
     fun clickHandler(view: View) {
         Log.i("MainActivity-clickHandler", "button clicked")
-        //val dialIntent: Intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:12345678"))
-//        val webIntent: Intent = Intent(/* action = */
-//            ACTION_VIEW, /* uri = */
-//            Uri.parse("https://www.yahoo.com")
-//        ).apply {
-//            startActivity(this)
-//        }
         var hIntent:Intent = Intent(this,HomeActivity::class.java)
         hIntent.putExtra("mykey","android-vit-abdul")
         startActivity(hIntent)
