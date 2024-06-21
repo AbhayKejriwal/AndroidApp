@@ -3,5 +3,6 @@
     <string name="hint_name">Enter Name</string>
     <string name="hint_password">Enter Password</string>
     <string name="login">Login</string>
+    <string name="home">Home</string>
 
 </resources>

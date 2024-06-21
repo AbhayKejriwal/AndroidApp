@@ -4,4 +4,5 @@
     <string name="hint_name">नाम दर्ज करें</string>
     <string name="hint_password">पास वर्ड दर्ज करें</string>
     <string name="login">लॉग इन करें</string>
+    <string name="home">घर</string>
 </resources>
