@@ -15,7 +15,12 @@ import com.example.myapplication.database.Item
 import com.example.myapplication.database.ItemDao
 import com.example.myapplication.database.ItemRoomDatabase
 import com.example.myapplication.databinding.ActivityHomeBinding
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.last
+import kotlinx.coroutines.flow.single
 import kotlinx.coroutines.launch
 
 class HomeActivity : AppCompatActivity()
@@ -39,6 +44,15 @@ class HomeActivity : AppCompatActivity()
         dao = database.itemDao()
         binding.btnDbInsert.setOnClickListener {
             insertDataDb()
+        }
+        binding.btnFind.setOnClickListener{
+            findItemDb(21)
+        }
+    }
+    private fun findItemDb(id: Int) {
+        GlobalScope.launch(Dispatchers.Main) {
+            var item = dao.getItem(id).first()
+            binding.tvHome.setText(item.itemName)
         }
     }
     private fun insertDataDb() {
