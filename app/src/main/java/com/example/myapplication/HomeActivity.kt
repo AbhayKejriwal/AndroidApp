@@ -23,7 +23,7 @@ class HomeActivity : AppCompatActivity()
     lateinit var dao: ItemDao
     lateinit var viewModel: HomeViewModel
 
-    var count = 0
+//    var count = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -34,7 +34,7 @@ class HomeActivity : AppCompatActivity()
         var database = ItemRoomDatabase.getDatabase(this)
         dao = database.itemDao()
         viewModel = ViewModelProvider(this)[HomeViewModel::class.java]
-        binding.tvHome.setText(""+count)
+        binding.tvHome.setText(""+viewModel.count)
         //viewModel.count)
 
         binding.btnDbInsert.setOnClickListener {
@@ -45,10 +45,9 @@ class HomeActivity : AppCompatActivity()
         }
 
         binding.btnInc.setOnClickListener{
-            count++
-            //viewModel.incrementCount()
-            binding.tvHome.setText(""+count)
-            //+viewModel.count)
+//            count++
+            viewModel.incrementCount()
+            binding.tvHome.setText(""+viewModel.count)
         }
     }
 
